@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Sugerencias</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="home">
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Dirigido a (Enviar a decdam@mail.com)</ion-label>
+            <ion-input type="text" [(ngModel)]="recipient"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Asunto</ion-label>
+            <ion-input type="text" [(ngModel)]="subject"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Mensaje</ion-label>
+            <ion-textarea [(ngModel)]="message"></ion-textarea>
+        </ion-item>
+    </ion-list>
+    <div padding>
+        <button ion-button color="Primary" on-tap="sendMail(recipient, subject, message)">ENVIAR</button>
+    </div>
+</ion-content>
