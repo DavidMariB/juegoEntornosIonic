@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-page1',
@@ -9,6 +10,7 @@ import { AlertController } from 'ionic-angular';
 export class Page1 {
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+    
     
   }
 
@@ -19,6 +21,11 @@ export class Page1 {
       buttons: ['OK']
     });
     alert.present();
+  }
+
+  pushLevelsPage(){
+
+   this.navCtrl.push(HomePage);
   }
 
 }

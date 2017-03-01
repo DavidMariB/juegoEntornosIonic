@@ -1,0 +1,20 @@
+<ion-header>
+     <ion-navbar color="primary">
+        <ion-title>NIVELES</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content id="content"  style="overflow-y:scroll">
+    <canvas #canvas></canvas>
+        <button ion-button
+                *ngFor="let level of levels" 
+                id="button{{level.id}}"
+                (click)="levelTapped($event, level)"
+                [style.left.px]="level.x" 
+                [style.bottom.px]="level.y"
+        >
+            <span
+            [innerHTML]="setText(level)"
+            ></span>
+        </button>
+</ion-content>
