@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef }  from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NavController, NavParams, Content, AlertController } from 'ionic-angular';
 import { LevelDetailsPage } from '../level-details/level-details';
+import { Level1Page } from '../level1/level1';
 
 
 const NUMBER_OF_LEVELS = 5;
@@ -144,14 +145,7 @@ export class HomePage {
                message: 'Completa el nivel anterior para poder jugar',
                buttons: ['OK']
            });
-           alert.present();/*
-       } else if (level.id != this.totalPoints && this.levels[level.id].isActive){
-           let alert = this.alerCtrl.create({
-               title: 'Sorry..',
-               message: 'You finished this level go forward!',
-               buttons: ['Got it']
-           });
-           alert.present();*/
+           alert.present();
        } else {
            this.navCtrl.push(LevelDetailsPage, {
                level: level

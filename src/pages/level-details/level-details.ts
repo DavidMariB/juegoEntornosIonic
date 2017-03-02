@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { Level1Page } from '../level1/level1';
 
 
 @Component({
@@ -70,5 +71,7 @@ export class LevelDetailsPage {
         
         this.max++;
     }
+
+    
     
 }
