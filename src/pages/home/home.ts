@@ -10,7 +10,7 @@ const NUMBER_OF_LEVELS = 5;
 @Component({
   templateUrl: 'home.html',
   styles: [
-      'button {z-index:2; position:absolute; border-radius:50%; width: 50px; height: 50px; -webkit-transform: translate3d(0,0,0);}',
+      'button {z-index:2; position:absolute; font-family: Dosis; border-radius:50%; width: 50px; height: 50px; -webkit-transform: translate3d(0,0,0);}',
       'canvas {z-index:1}',
       'span {z-index:3}'
   ]

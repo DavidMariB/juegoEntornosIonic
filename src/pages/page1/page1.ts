@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { ComoJugarPage } from '../como-jugar/como-jugar';
 
 @Component({
   selector: 'page-page1',
@@ -14,18 +15,14 @@ export class Page1 {
     
   }
 
-  showAlert() {
-    let alert = this.alertCtrl.create({
-      title: 'NO PODES',
-      subTitle: 'Los niveles no están implementados todavía.',
-      buttons: ['OK']
-    });
-    alert.present();
-  }
-
   pushLevelsPage(){
 
    this.navCtrl.push(HomePage);
+  }
+
+  pushInstructionsPage(){
+
+  	this.navCtrl.push(ComoJugarPage);
   }
 
 }
