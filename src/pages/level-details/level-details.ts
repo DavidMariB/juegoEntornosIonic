@@ -70,16 +70,6 @@ export class LevelDetailsPage {
         }
         
         this.max++;
-    }
-
-    /*level1(){
-         if ( this.max == this.selectedLevel.id ) {
-            return false;
-        } else if (this.max == this.selectedLevel.id - 1){
-            this.navCtrl.push(Level1Page);
-        }
-    }*/
-
-    
+    }    
     
 }
